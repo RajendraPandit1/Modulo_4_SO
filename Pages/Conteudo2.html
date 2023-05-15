@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rajendra Pandit</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
+</head>
+
+<body class="background_active">
+    <header>
+
+        <nav class="nav">
+            <a href="https://aeddinislisboa.wixsite.com/aeddinis">
+                <img src="../icons/icon.png">
+            </a>
+            <ul>
+                <li><a href="../index.html">Pagina inicial</a></li>
+                <li><a  href="./Conteudo.html">Informação</a></li>
+                <li><a  href="./Conteudo1.html">Instalação</a></li>
+                <li><a class="select" href="./Conteudo2.html">Informação-II</a></li>
+                <li><a href="./webgrafia.html">Webgrafia</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    
+<main>
+  <h2>Diferencie entre o gerenciador de arquivos do Linux e do Windows</h2><br>
+    <table>
+    <tr>
+      <th>Gerenciador de arquivos</th>
+      <th>Sistema operacional</th>
+      <th>Recursos</th>
+    </tr>
+    <tr>
+      <td>Nautilus</td>
+      <td>Linux</td>
+      <td>Navegação por abas, pré-visualização de arquivos, integração com extensões</td>
+    </tr>
+    <tr>
+      <td>Thunar</td>
+      <td>Linux</td>
+      <td>Navegação por abas, integração com extensões</td>
+    </tr>
+    <tr>
+      <td>Windows Explorer</td>
+      <td>Windows</td>
+      <td>Navegação por abas, pré-visualização de arquivos, integração com OneDrive</td>
+    </tr>
+    <tr>
+      <td>File Explorer</td>
+      <td>Windows</td>
+      <td>Navegação por abas, pré-visualização de arquivos, integração com OneDrive</td>
+    </tr>
+</table>
+<br>
+<h2>Políticas de segurança</h2><br>
+<table>
+  <tr>
+    <th>Política</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>Contas de Usuário</td>
+    <td>As contas de usuário são criadas para fornecer acesso aos indivíduos autorizados a utilizar o sistema. No Manjaro, você pode criar uma conta de usuário usando o comando <code>useradd</code> no terminal.</td>
+  </tr>
+  <tr>
+    <td>Contas de Administrador (sudo)</td>
+    <td>As contas de administrador no Manjaro são configuradas usando o grupo <code>sudo</code>. Os usuários adicionados a esse grupo têm permissões administrativas para executar comandos com privilégios elevados. Você pode adicionar um usuário ao grupo <code>sudo</code> usando o comando <code>usermod -aG sudo nome_do_usuário</code>.</td>
+  </tr>
+  <tr>
+    <td>Senha Forte</td>
+    <td>A política de senha forte é recomendada para todas as contas do sistema. Os usuários devem ser instruídos a criar senhas complexas, combinando letras maiúsculas, minúsculas, números e caracteres especiais. A alteração regular da senha também é uma prática recomendada.</td>
+  </tr>
+  <tr>
+    <td>Política de Bloqueio de Conta</td>
+    <td>Uma política de bloqueio de conta pode ser implementada usando ferramentas como o <code>fail2ban</code> para proteger contra ataques de força bruta. Esse software monitora os logs do sistema e bloqueia automaticamente endereços IP suspeitos após várias tentativas falhas de login.</td>
+  </tr>
+</table>
+<br>
+<h2> Gerenciamento de pacotes no Manjaro </h2>
+<br>
+
+<table>
+  <tr>
+    <th>Passo</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>Pesquisar pacote</td>
+    <td>Para encontrar um novo software disponível para instalação, você pode usar o comando pacman -Ss nome_do_pacote  ou consultar a lista de pacotes no repositório oficial do Manjaro.</td>
+  </tr>
+  <tr>
+    <td>Instalar pacote</td>
+    <td>Após encontrar o pacote desejado, você pode instalá-lo usando o comando  sudo pacman -S nome_do_pacote. O Manjaro cuidará automaticamente das dependências necessárias e realizará a instalação.</td>
+  </tr>
+  <tr>
+    <td>Remover pacote</td>
+    <td>Se você deseja remover um pacote instalado, pode usar o comando sudo pacman -R nome_do_pacote. Isso removerá o pacote, mas manterá as dependências não utilizadas em seu sistema.</td>
+  </tr>
+  <tr>
+    <td>Atualizar pacotes</td>
+    <td>Para manter seu sistema atualizado, é recomendável executar regularmente o comando sudo pacman -Syu. Isso atualizará todos os pacotes instalados no seu sistema Manjaro Linux.</td>
+  </tr>
+</table>
+<br>
+
+<h2> Diferentes sistemas de ficheiros em Sistemas Operativos Open Source</h2>
+<br>
+
+<table>
+  <tr>
+    <th>Sistema de Arquivos</th>
+    <th>Descrição</th>
+    <th>Sistema Operacional</th>
+  </tr>
+  <tr>
+    <td>Ext4</td>
+    <td>O Ext4 é um sistema de arquivos de jornalização usado em muitas distribuições Linux. Ele oferece suporte a tamanhos de arquivo e sistemas de arquivos muito maiores em comparação com seu antecessor, Ext3.</td>
+    <td>Linux</td>
+  </tr>
+  <tr>
+    <td>Btrfs</td>
+    <td>O Btrfs (B-tree File System) é um sistema de arquivos moderno projetado para fornecer recursos avançados, como snapshots, compressão, desduplicação e tolerância a falhas. Ele é amplamente utilizado em distribuições Linux.</td>
+    <td>Linux</td>
+  </tr>
+  <tr>
+    <td>ZFS</td>
+    <td>O ZFS (Zettabyte File System) é um sistema de arquivos robusto que fornece recursos avançados, incluindo integridade de dados, pooling de armazenamento, snapshots e replicação. É frequentemente usado em sistemas operacionais baseados em Unix, como FreeBSD e algumas distribuições Linux.</td>
+    <td>Linux, FreeBSD</td>
+  </tr>
+  <tr>
+    <td>XFS</td>
+    <td>O XFS é um sistema de arquivos altamente escalável e de alto desempenho que oferece suporte a volumes grandes e operações eficientes de leitura e gravação. É comumente usado em distribuições Linux.</td>
+    <td>Linux</td>
+  </tr>
+  <tr>
+    <td>NTFS</td>
+    <td>O NTFS (New Technology File System) é um sistema de arquivos desenvolvido pela Microsoft e amplamente usado em sistemas Windows. No entanto, também há suporte para leitura/gravação em sistemas Linux através de drivers.</td>
+    <td>Linux, Windows</td>
+  </tr>
+</table>
+
+
+</main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
